@@ -1,6 +1,9 @@
 package modelo;
 
 public class DAOPersona {
+	/**
+	 * Variable para instanciar la base de datos
+	 */
 	DataBase db;
 	public DAOPersona() {
 		db = new DataBase();
@@ -13,7 +16,6 @@ public class DAOPersona {
 	public boolean existeEmail(String email) {
 		return db.existeEmail(email);
 	}
-	
 	public boolean existeUsername(String username) {
 		return db.existeUsername(username);
 	}

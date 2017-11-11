@@ -22,7 +22,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MenuController {
-private static final Logger logger = LoggerFactory.getLogger(RegisterController.class);
 @RequestMapping("modificarUsuario")
 public ModelAndView modificar(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
 //logger.info("Register page! The client locale is {}.", locale);

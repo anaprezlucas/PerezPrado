@@ -43,7 +43,7 @@ public class HomeController {
 		return "home";
 	}
 	@RequestMapping(value = "loginUsuario", method = RequestMethod.POST)
-	public ModelAndView login(HttpServletRequest request, HttpServletResponse response)throws Exception{
+	public ModelAndView login(HttpServletRequest request)throws Exception{
 		String username, password;
 		username = request.getParameter("inputEmail");
 		password = request.getParameter("inputPassword");
