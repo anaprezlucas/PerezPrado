@@ -205,7 +205,7 @@ protected boolean createPublicacion(Publicacion p) {
       return false;
     }
   }
-  protected boolean deletePublicacion(Publicacion pub) {
+  protected boolean deletePublicacion(Publicacion publi) {
     boolean borrado= false;
     db = client.getDatabase(uri.getDatabase());
     dbPublicaciones = db.getCollection("publicaciones");
@@ -213,8 +213,8 @@ protected boolean createPublicacion(Publicacion p) {
     while(elementos.hasNext()) {
       aux=elementos.next();
       System.out.println("Entra: "+aux.get("username").toString()+" "+aux.get("fecha").toString());
-      if((aux.get("username").toString().equalsIgnoreCase(pub.getUsername()))&&
-         (aux.get("fecha").toString().equalsIgnoreCase(pub.getFecha().toString()))) {
+      if((aux.get("username").toString().equalsIgnoreCase(publi.getUsername()))&&
+         (aux.get("fecha").toString().equalsIgnoreCase(publi.getFecha().toString()))) {
         dbPublicaciones.deleteOne(aux);
         borrado=true;
       }
