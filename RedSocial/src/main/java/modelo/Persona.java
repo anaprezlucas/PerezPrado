@@ -75,8 +75,7 @@ public class Persona {
 	}
 	
 	private boolean esNumero(char n) {
-		if(n>='0'&&n<='9')return true;
-		else return false;
+		return (n>='0'&&n<='9');
 	}
 	
 	private boolean esMayuscula(char n) {

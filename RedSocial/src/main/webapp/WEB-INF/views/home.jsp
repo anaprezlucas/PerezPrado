@@ -143,7 +143,7 @@
 <body >
 	
 	<script language="JavaScript" type="text/javascript">
-		if("${aviso}"!=""){
+		if("${aviso}"!==""){
 			alert("${aviso}");
 		}
 	</script>
@@ -153,9 +153,9 @@
 
     <div class="container">
         <h1 style="color:white;">Bienvenido a Intravita</h1>
-        <p style="font-size: 20px; color:white;">Inicia sesión para entrar o si aún no tienes cuenta...regístrate!</p>
+        <p style="font-size: 20px; color:white;">Inicia sesiï¿½n para entrar o si aï¿½n no tienes cuenta...regï¿½strate!</p>
       	<form action="register" method="get">
-            	<button class="btn btn-success" style="font-size: 20px; color:white;" type="submit" value="Registrarse" name = "register">Regístrate</button>
+            	<button class="btn btn-success" style="font-size: 20px; color:white;" type="submit" value="Registrarse" name = "register">Regï¿½strate</button>
         </form>
         <!--  Aqui aÃ±adir un form -->
         
@@ -175,7 +175,7 @@
             <div>
           
              <form action="forgotPassword" method="get">
-            	<button style="align-content: center;margin: auto;display: table;" class="btn btn-warning" type="submit" value="forgotPassword" name = "forgotPassword">¿Olvidó la Contraseña?</button>
+            	<button style="align-content: center;margin: auto;display: table;" class="btn btn-warning" type="submit" value="forgotPassword" name = "forgotPassword">ï¿½Olvidï¿½ la Contraseï¿½a?</button>
         	</form>
         
         	
