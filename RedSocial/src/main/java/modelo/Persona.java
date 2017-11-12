@@ -79,8 +79,11 @@ public class Persona {
 	}
 	
 	private boolean esMayuscula(char n) {
-		if(n>='A'&&n<='Z')return true;
-		else return false;
+		boolean check = false;
+		if(n>='A'&&n<='Z')
+			check = true;
+		
+		return check;
 	}
 	
 	private boolean esMinuscula(char n) {
