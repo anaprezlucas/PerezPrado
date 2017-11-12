@@ -22,6 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MenuController {
+<<<<<<< HEAD
 	private static final Logger logger = LoggerFactory.getLogger(RegisterController.class);
 
 	@RequestMapping("modificarUsuario")
@@ -43,5 +44,24 @@ public class MenuController {
 		dao.update(p);
 		return new ModelAndView("menu");
 	}
+=======
+@RequestMapping("modificarUsuario")
+public ModelAndView modificar(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
+//logger.info("Register page! The client locale is {}.", locale);
+boolean flag=false;
+String nombre, apellidos, username, email, password, repitePassword, direccion, telefono, foto;
+nombre = request.getParameter("inputNombre");
+apellidos = request.getParameter("inputApellidos");
+password = request.getParameter("inputPassword");
+direccion = request.getParameter("inputDireccion");
+telefono = request.getParameter("inputTelefono");
+username= request.getParameter("aUser");
+email=request.getParameter("aEmail");
+DAOPersona dao = new DAOPersona();
+Persona p= new Persona(nombre,apellidos, username,email, password, direccion, telefono, "", false, "usuario");
+dao.update(p);
+return new ModelAndView("menu");
+}
+>>>>>>> Lydia
 
 }
