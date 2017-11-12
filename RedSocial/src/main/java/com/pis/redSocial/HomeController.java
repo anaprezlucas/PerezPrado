@@ -57,24 +57,6 @@ public class HomeController {
 		}else {
 			return new ModelAndView("home", "aviso", "El usuario y/o clave son incorrectos.");
 		}
-		
-		/*if(dao.existeUsername(username)){
-			p=dao.getPersona(username);
-			if(password.equals(p.getPassword())){
-				if(dao.login(p)){
-					cadena="menu";
-					a = dao.getPersona(p.getUsername());
-					return new ModelAndView(cadena, "persona", a);
-				}else{
-					cadena="home";
-				}
-			}else{
-				cadena="home";
-			}
-		}else{
-			cadena="home";
-		}*/
-		//return new ModelAndView(cadena);
 	}
 	
 }

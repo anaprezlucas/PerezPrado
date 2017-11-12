@@ -103,20 +103,7 @@ private static final Logger logger = LoggerFactory.getLogger(RegisterController.
 						miMAV.addObject("mensaje","No se puede registrar. No se cumple los requisitos de la contraseña.");
 						return miMAV;
 					}else{
-						/*if(!foto.equalsIgnoreCase(".*")) {
-							//CODIGO CONTROL EXTENSION ARCHIVOS
-							miMAV.addObject("nombre", nombre);
-					        miMAV.addObject("apellidos", apellidos);
-					        miMAV.addObject("usuario", username);
-					        miMAV.addObject("email", email);
-					        miMAV.addObject("password", password);
-					        miMAV.addObject("repassword", repitePassword);
-					        miMAV.addObject("direccion", direccion);
-					        miMAV.addObject("telefono", telefono);
-				            miMAV.addObject("mensaje", "El archivo adjunto no es una imagen.");
-				            return miMAV;
-						}else {*/
-							//CREA USUARIO
+						
 							p = new Persona(nombre, apellidos, username, email, password, direccion, telefono, foto, false, "usuario");
 							dao.crearPersona(p);
 							return new ModelAndView("home", "aviso", "Cuenta creada correctamente");
